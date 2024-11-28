@@ -14,7 +14,7 @@ Junxian has diligently focused on **large‐scale cloud and network infrastructu
 Leveraging on the Future Internet Technology Infrastructure (FITI), which is the only major scientific and technological infrastructure in the information field under the national 13th Five‐Year Plan, he has made notable achievements in academic research. 
 His efforts have culminated in the publication of high‐quality papers at prestigious conferences and journals such as ***ACM SIGCOMM***, ***ACM CCS***, and ***IEEE TPDS***. 
 
-You can find my CV [here](../files/CV_EN.pdf) ([中文简历](../files/CV_ZH.pdf)).
+[Curriculum Vitae](../files/CV_EN.pdf); [中文简历](../files/CV_ZH.pdf).
 
 Recent Publication Highlights
 ======
