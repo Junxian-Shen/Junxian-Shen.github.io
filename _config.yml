@@ -14,7 +14,7 @@ name                     : &name "Junxian Shen"
 description              : &description "personal description"
 url                      : https://junxian-shen.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : # "academicpages/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Junxian Shen"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. candidate in Tsinghua University. Focusing on cloud and network observability."
+  bio              : "Ph.D. candidate in Tsinghua University. Focusing on large-scale cloud and network infrastructure observability."
   location         : "Beijing, China"
   employer         : "Tsinghua University"
   uri              : # URL

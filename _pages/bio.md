@@ -26,6 +26,10 @@ Honors and Awards
 * Ranked 1st in the Science section of the Guangdong College Entrance Examination
 * The First Prize of Tsinghua University Freshman Scholarship
 
+Professional Experiences
+======
+* 2025, The 21th International Conference on emerging Networking EXperiments and Technologies (***Shadow TPC***)
+
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
