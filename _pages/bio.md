@@ -28,6 +28,7 @@ Honors and Awards
 
 Professional Experiences
 ======
+* 2025, The 1st Workshop on Next-Generation Network Observability (NGNO) (***Publication Co-Chair***)
 * 2025, The 21th International Conference on emerging Networking EXperiments and Technologies (***Shadow TPC***)
 
 Publications

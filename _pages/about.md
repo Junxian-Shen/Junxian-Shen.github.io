@@ -16,6 +16,11 @@ His efforts have culminated in the publication of high‐quality papers at prest
 
 [Curriculum Vitae](../files/CV_EN.pdf); [中文简历](../files/CV_ZH.pdf).
 
+News
+======
+
+- I will serve as the Publication Co-Chair for [the 1st Workshop on Next-Generation Network Observability (NGNO)](https://conferences.sigcomm.org/sigcomm/2025/workshop/ngno/), please submit your great work.
+
 Recent Publication Highlights
 ======
 
