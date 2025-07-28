@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-Junxian is currently pursuing his Ph.D. at the Institute of Network Science and Cyberspace, Tsinghua University, advised by Prof. Jilong Wang, Prof. Mingwei Xu, and Assoc. Prof. Han Zhang. 
+Junxian is currently an Assistant Professor at the School of Computer Science & Engineering, South China University of Technology.
+He received his Ph.D. at the Institute of Network Science and Cyberspace, Tsinghua University, advised by Prof. Jilong Wang, Prof. Mingwei Xu, and Assoc. Prof. Han Zhang. 
 He received his B.Eng. in the Department of Computer Science and Technology from Tsinghua University in July 2019, advised by Prof. Jun Bi (late).
 
 Junxian has diligently focused on **large‐scale cloud and network infrastructure monitoring**. 

@@ -12,7 +12,7 @@ redirect_from:
 
 Education
 ======
-* Tsinghua University, Beijing, China, 2019 – Now <br>
+* Tsinghua University, Beijing, China, 2019 – 2025 <br>
 Ph.D. candidate @ Institute for Network Sciences and Cyberspace <br>
 Advisor: Prof. Jilong Wang, Prof. Mingwei Xu, and Assoc. Prof. Han Zhang. 
 * Tsinghua University, Beijing, China, 2015 – 2019 <br>
@@ -30,6 +30,7 @@ Professional Experiences
 ======
 * 2025, The 1st Workshop on Next-Generation Network Observability (NGNO) (***Publication Co-Chair***)
 * 2025, The 21th International Conference on emerging Networking EXperiments and Technologies (***Shadow TPC***)
+* 2025, IEEE Transactions on Information Forensics & Security (T‑IFS) (***Reviewer***)
 
 Publications
 ======
