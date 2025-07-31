@@ -13,7 +13,7 @@ redirect_from:
 Education
 ======
 * Tsinghua University, Beijing, China, 2019 – 2025 <br>
-Ph.D. candidate @ Institute for Network Sciences and Cyberspace <br>
+Ph.D. @ Institute for Network Sciences and Cyberspace <br>
 Advisor: Prof. Jilong Wang, Prof. Mingwei Xu, and Assoc. Prof. Han Zhang. 
 * Tsinghua University, Beijing, China, 2015 – 2019 <br>
 B.Eng. @ Computer Science and Technology <br>

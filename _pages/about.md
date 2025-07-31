@@ -20,6 +20,7 @@ His efforts have culminated in the publication of high‐quality papers at prest
 News
 ======
 
+- I will serve as a Reviewer for *IEEE Transactions on Information Forensics & Security (T-IFS)* (2025).
 - I will serve as the Publication Co-Chair for [the 1st Workshop on Next-Generation Network Observability (NGNO)](https://conferences.sigcomm.org/sigcomm/2025/workshop/ngno/), please submit your great work.
 
 Recent Publication Highlights
