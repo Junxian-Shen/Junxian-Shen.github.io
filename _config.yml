@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Junxian Shen"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. candidate in Tsinghua University. Focusing on large-scale cloud and network infrastructure observability."
-  location         : "Beijing, China"
-  employer         : "Tsinghua University"
+  bio              : "Assistant Professor at the School of Computer Science & Engineering, South China University of Technology. Focusing on large-scale cloud and network infrastructure observability."
+  location         : "Guangzhou, Guangdong,China"
+  employer         : "South China University of Technology"
   uri              : # URL
   email            : "shenjx22@mails.tsinghua.edu.cn" 
 
