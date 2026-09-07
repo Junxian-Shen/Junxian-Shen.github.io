@@ -22,6 +22,7 @@ figure, p, h1, h2, h3, h4 { margin: 0; }
 .icon-news::before { content: "\f1ea"; }
 .icon-research::before { content: "\f0c3"; }
 .icon-book::before { content: "\f518"; }
+.icon-project::before { content: "\f07c"; }
 .icon-talk::before { content: "\f130"; }
 .icon-mail::before { content: "\f0e0"; }
 .icon-scholar::before { content: "\f19d"; }
@@ -69,7 +70,7 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
 .intro-photo figcaption { display: flex; align-items: center; justify-content: center; gap: 7px; margin-top: 21px; color: var(--muted); font-size: .75rem; }
 
 /* Icons, a fine rule, and measured spacing give each section the same rhythm. */
-.about-section, .news-section, .research-section, .publications-section, .talks-section { padding-top: 36px; }
+.about-section, .news-section, .research-section, .publications-section, .projects-section, .teaching-section, .talks-section { padding-top: 36px; }
 .section-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-bottom: 12px; margin-bottom: 20px; border-bottom: 1px solid var(--line); }
 .section-heading > div { display: flex; align-items: center; gap: 11px; }
 .section-heading .icon { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; color: var(--blue); background: var(--line); border-radius: 8px; font-size: 1rem; }
@@ -96,6 +97,8 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
 .news-tag { display: inline-block; margin-right: 8px; padding: 1px 6px; border-radius: 4px; vertical-align: 1px; font-size: .75rem; font-weight: 600; color: #75431c; background: var(--warm-light); }
 .news-tag--paper { background: var(--mist); color: var(--blue); }
 .news-tag--award { background: var(--green-light); color: #3f6229; }
+.news-tag--funding { background: var(--green-light); color: #3f6229; }
+.news-tag--teaching { background: var(--warm-light); color: #75431c; }
 
 /* Research stays brief, with quiet icon-led cards, not miniature paper pages. */
 .research-section { position: relative; }
@@ -127,8 +130,20 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
 .publication-links a { display: inline-flex; gap: 6px; align-items: center; padding: 3px 8px; border: 1px solid var(--line); border-radius: 5px; color: var(--blue); font-size: .8125rem; text-decoration: none; background: var(--surface); }
 .publication-links a:hover { color: #fff; background: var(--blue); border-color: var(--blue); }
 
+/* Projects and courses are short records, maintained as bilingual data. */
+.academic-records { padding: 0 22px; border: 1px solid var(--line); border-radius: 11px; background: var(--surface); box-shadow: var(--shadow); }
+.academic-record { padding-block: 20px; }
+.academic-record + .academic-record { border-top: 1px dashed var(--line); }
+.academic-record h3 { font-size: 1.0625rem; line-height: 1.7; font-weight: 600; }
+.record-label { color: var(--blue); font-size: .8125rem; font-weight: 600; margin-bottom: 7px; }
+.record-details { display: flex; flex-wrap: wrap; gap: 5px 20px; list-style: none; margin: 9px 0 0; padding: 0; color: var(--muted); font-size: .875rem; }
+.teaching-record { display: flex; justify-content: space-between; align-items: baseline; gap: 12px 24px; flex-wrap: wrap; }
+.teaching-record a { color: var(--blue); text-decoration: none; }
+.teaching-record a:hover { text-decoration: underline; }
+.course-term { color: var(--muted); font-size: .875rem; }
+
 /* Talks use a different, compact row layout to keep the page easy to scan. */
-.talks-section { padding-top: 15px; padding-bottom: 45px; }
+.talks-section { padding-bottom: 45px; }
 .talk-grid { padding: 2px 21px; background: var(--surface); border: 1px solid var(--line); border-radius: 11px; box-shadow: var(--shadow); }
 .talk-card { display: grid; grid-template-columns: 98px minmax(0, 1fr) auto; padding-block: 19px; column-gap: 17px; }
 .talk-card + .talk-card { border-top: 1px dashed var(--line); }
@@ -157,17 +172,16 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
 .lang-zh .intro-statement { font-size: 1.0625rem; }
 @media (max-width: 1000px) {
   .shell { width: calc(100% - 52px); }
-  .header-inner { gap: 16px; }
+  .header-inner { flex-wrap: wrap; padding-top: 13px; min-height: 0; gap: 0; }
+  .language-switch { margin-left: auto; }
+  .site-nav { width: 100%; order: 3; justify-content: space-between; padding-block: 10px; }
+  .site-nav a { padding-block: 5px; }
   .site-nav a { padding-inline: 8px; }
   .intro { gap: 40px; grid-template-columns: minmax(0, 1fr) 175px; }
   .research-area { padding: 20px 17px; }
   .research-directions { gap: 14px; }
 }
 @media (max-width: 780px) {
-  .header-inner { flex-wrap: wrap; padding-top: 13px; min-height: 0; gap: 0; }
-  .language-switch { margin-left: auto; }
-  .site-nav { width: 100%; order: 3; justify-content: space-between; padding-block: 10px; }
-  .site-nav a { padding-block: 5px; }
   .intro { grid-template-columns: minmax(0, 1fr) 145px; gap: 27px; padding-block: 32px; }
   h1 { font-size: 2.4rem; }
   h1 span { margin: 7px 0 0; display: block; font-size: 1.125rem; }
@@ -200,7 +214,7 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
   .affiliation { font-size: .875rem; }
   .profile-links { gap: 8px; margin-top: 19px; }
   .profile-links a { padding: 6px 10px; font-size: .8125rem; gap: 6px; }
-  .about-section, .news-section, .research-section, .publications-section { padding-top: 27px; }
+  .about-section, .news-section, .research-section, .publications-section, .projects-section, .teaching-section, .talks-section { padding-top: 27px; }
   .section-heading { gap: 12px; margin-bottom: 17px; padding-bottom: 10px; }
   .section-heading h2, .lang-zh .section-heading h2 { font-size: 1.375rem; }
   .section-heading .icon { width: 29px; height: 29px; font-size: .875rem; }
@@ -215,6 +229,9 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
   .publication { flex-direction: column; gap: 8px; padding-block: 13px; }
   .publication h4 { font-size: 1rem; }
   .publication-links { flex-direction: row; }
+  .academic-records { padding-inline: 15px; }
+  .academic-record { padding-block: 16px; }
+  .academic-record h3 { font-size: 1rem; }
   .talk-grid { padding-inline: 15px; }
   .talk-card { grid-template-columns: 1fr; padding-block: 16px; }
   .talk-top { grid-column: 1; grid-row: 1; padding: 0 0 6px; }
@@ -233,5 +250,5 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
   .shell { width: 100%; }
   .intro { padding-block: 15px; }
   .news-timeline { max-height: none; overflow: visible; box-shadow: none; }
-  .research-area, .publication, .talk-card { break-inside: avoid; box-shadow: none; }
+  .research-area, .publication, .academic-record, .talk-card { break-inside: avoid; box-shadow: none; }
 }

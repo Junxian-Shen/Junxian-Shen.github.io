@@ -1,5 +1,26 @@
 # 按展示顺序维护，最新消息放最上面。
-# 每条只填 date、category、text；url 可省略或留空。
+# 日期未确认时省略 date，不推测年份；url 可省略，也可用 #teaching 等站内锚点。
+# 基金资助只放在 About 和科研项目栏目，不加入 News。
+- date: "2026 · Fall"
+  date_zh: "2026 · 秋"
+  category: "Teaching"
+  text: "Teaching Operating Systems in Fall 2026."
+  text_zh: "2026 年秋季学期讲授《操作系统》。"
+  url: "#teaching"
+
+- date: "2026 · Jun"
+  date_zh: "2026 · 06"
+  category: "Paper"
+  text: "TFCG was published in Applied Soft Computing."
+  text_zh: "TFCG 论文发表于 Applied Soft Computing。"
+  url: "/files/TFCG-ASC.pdf"
+
+- date: "2026"
+  category: "Paper"
+  text: "Clover was published in IEEE Transactions on Networking."
+  text_zh: "Clover 论文发表于 IEEE Transactions on Networking。"
+  url: "/files/Clover-ToN.pdf"
+
 - date: "2025"
   category: "Service"
   text: "Serving as a reviewer for IEEE Transactions on Information Forensics & Security (T-IFS)."

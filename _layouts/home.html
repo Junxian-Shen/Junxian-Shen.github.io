@@ -36,7 +36,7 @@ layout: compress
     <header class="site-header">
       <div class="shell header-inner">
         <a class="brand" href="#about">{% if lang == 'zh' %}{{ home.name_zh | escape }}{% else %}{{ site.author.name | escape }}{% endif %}<span class="brand-dot">.</span></a>
-        <nav class="site-nav" aria-label="{{ ui.nav_label }}"><a href="#about" aria-current="location">{{ ui.about }}</a><a href="#news">{{ ui.news }}</a><a href="#research">{{ ui.research }}</a><a href="#publications">{{ ui.publications }}</a><a href="#talks">{{ ui.talks }}</a></nav>
+        <nav class="site-nav" aria-label="{{ ui.nav_label }}"><a href="#about" aria-current="location">{{ ui.about }}</a><a href="#news">{{ ui.news }}</a><a href="#research">{{ ui.research }}</a><a href="#publications">{{ ui.publications }}</a>{% if site.data.projects.size > 0 %}<a href="#projects">{{ ui.projects }}</a>{% endif %}{% if site.data.teaching.size > 0 %}<a href="#teaching">{{ ui.teaching }}</a>{% endif %}<a href="#talks">{{ ui.talks }}</a></nav>
         <nav class="language-switch" aria-label="{{ ui.language_label }}"><a data-language href="{{ '/' | relative_url }}" lang="en" hreflang="en"{% if lang == 'en' %} aria-current="page"{% endif %}>EN</a><a data-language href="{{ '/zh/' | relative_url }}" lang="zh-CN" hreflang="zh-CN"{% if lang == 'zh' %} aria-current="page"{% endif %}>中文</a></nav>
       </div>
     </header>

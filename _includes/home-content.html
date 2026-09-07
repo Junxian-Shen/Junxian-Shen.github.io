@@ -59,8 +59,9 @@
         {% assign news_text = item.text %}{% assign news_date = item.date %}
         {% if lang == 'zh' %}{% assign news_text = item.text_zh | default: item.text %}{% assign news_date = item.date_zh | default: item.date %}{% endif %}
         <article class="news-entry">
-          <time>{{ news_date | escape }}</time><span class="news-marker" aria-hidden="true"></span>
-          <p><span class="news-tag news-tag--{{ item.category | slugify }}">{{ ui.news_categories[item.category] | default: item.category | escape }}</span>{% if item.url and item.url != '' %}<a href="{{ item.url | relative_url }}">{{ news_text | escape }}</a>{% else %}{{ news_text | escape }}{% endif %}</p>
+          {% if news_date and news_date != '' %}<time>{{ news_date | escape }}</time>{% else %}<span aria-hidden="true"></span>{% endif %}<span class="news-marker" aria-hidden="true"></span>
+          {% assign news_url = item.url %}{% assign url_start = news_url | slice: 0, 1 %}{% unless url_start == '#' %}{% assign news_url = news_url | relative_url %}{% endunless %}
+          <p><span class="news-tag news-tag--{{ item.category | slugify }}">{{ ui.news_categories[item.category] | default: item.category | escape }}</span>{% if item.url and item.url != '' %}<a href="{{ news_url | escape }}">{{ news_text | escape }}</a>{% else %}{{ news_text | escape }}{% endif %}</p>
         </article>
         {% endfor %}
       </div>
@@ -109,6 +110,39 @@
       </div>
     </div>
   </section>
+
+  {% if site.data.projects.size > 0 %}
+  <section class="projects-section shell" id="projects" aria-labelledby="projects-title">
+    <header class="section-heading"><div><i class="icon icon-project" aria-hidden="true"></i><h2 id="projects-title">{{ ui.projects }}</h2></div></header>
+    <div class="academic-records">
+      {% for item in site.data.projects %}
+      {% assign project_title = item.title %}{% assign funder = item.funder %}{% assign period = item.period %}{% assign role = item.role %}{% assign funding = item.funding %}
+      {% if lang == 'zh' %}{% assign project_title = item.title_zh | default: item.title %}{% assign funder = item.funder_zh | default: item.funder %}{% assign period = item.period_zh | default: item.period %}{% assign role = item.role_zh | default: item.role %}{% assign funding = item.funding_zh | default: item.funding %}{% endif %}
+      <article class="academic-record project-record">
+        <p class="record-label">{{ funder | escape }}</p>
+        <h3>{{ project_title | escape }}</h3>
+        {% if period or role or item.grant_number or funding %}<ul class="record-details">{% if period %}<li>{{ period | escape }}</li>{% endif %}{% if role %}<li>{{ role | escape }}</li>{% endif %}{% if item.grant_number %}<li>{{ ui.grant_number }} {{ item.grant_number | escape }}</li>{% endif %}{% if funding %}<li>{{ ui.funding }} {{ funding | escape }}</li>{% endif %}</ul>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if site.data.teaching.size > 0 %}
+  <section class="teaching-section shell" id="teaching" aria-labelledby="teaching-title">
+    <header class="section-heading"><div><i class="icon icon-scholar" aria-hidden="true"></i><h2 id="teaching-title">{{ ui.teaching }}</h2></div></header>
+    <div class="academic-records">
+      {% for item in site.data.teaching %}
+      {% assign course_title = item.title %}{% assign term = item.term %}
+      {% if lang == 'zh' %}{% assign course_title = item.title_zh | default: item.title %}{% assign term = item.term_zh | default: item.term %}{% endif %}
+      <article class="academic-record teaching-record">
+        <h3>{% if item.url and item.url != '' %}<a href="{{ item.url | relative_url }}">{{ course_title | escape }} <span aria-hidden="true">↗</span></a>{% else %}{{ course_title | escape }}{% endif %}</h3>
+        <p class="course-term">{{ term | escape }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
   <section class="talks-section shell" id="talks" aria-labelledby="talks-title">
     <header class="section-heading"><div><i class="icon icon-talk" aria-hidden="true"></i><h2 id="talks-title">{{ ui.talks }}</h2></div></header>

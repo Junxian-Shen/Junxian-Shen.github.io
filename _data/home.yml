@@ -25,14 +25,17 @@ biography:
     at Tsinghua University in July 2019, advised by the late Prof. Jun Bi.
   - >-
     Junxian's research focuses on **large-scale cloud and network infrastructure
-    monitoring**. Leveraging the Future Internet Technology Infrastructure (FITI),
-    a major national scientific and technological infrastructure project under
-    China's 13th Five-Year Plan, his work has led to publications at conferences
-    and journals including **ACM SIGCOMM**, **ACM CCS**, and **IEEE TPDS**.
+    monitoring**. He has conducted research using the Future Internet Technology
+    Infrastructure (FITI), a major national scientific and technological
+    infrastructure project under China's 13th Five-Year Plan. His work has appeared
+    at conferences and in journals including **ACM SIGCOMM**, **ACM CCS**,
+    **IEEE ToN**, **IEEE TPDS**, and **Applied Soft Computing**. His microservice
+    failure detection project has been awarded funding from the **National Natural
+    Science Foundation of China (NSFC)** for the period January 2027 to December 2029.
 
 biography_zh:
   - "沈俊贤现任华南理工大学计算机科学与工程学院助理教授。他在清华大学网络科学与网络空间研究院获得博士学位，导师为王继龙教授、徐明伟教授和张晗副教授；于 2019 年 7 月在清华大学计算机科学与技术系获得学士学位，师从已故毕军教授。"
-  - "他的研究主要聚焦于**大规模云与网络基础设施监测**。依托国家“十三五”重大科技基础设施项目——未来互联网试验设施（FITI），相关研究成果发表于 **ACM SIGCOMM**、**ACM CCS** 和 **IEEE TPDS** 等会议与期刊。"
+  - "他的研究主要聚焦于**大规模云与网络基础设施监测**，并依托国家“十三五”重大科技基础设施项目——未来互联网试验设施（FITI）开展相关研究。研究成果发表于 **ACM SIGCOMM**、**ACM CCS**、**IEEE ToN**、**IEEE TPDS** 和 **Applied Soft Computing** 等会议与期刊。他的微服务故障检测项目已获**国家自然科学基金**资助，执行期为 2027 年 1 月至 2029 年 12 月。"
 
 # 英文和中文并排维护；中文字段以 _zh 结尾，缺少中文时自动显示英文。
 # id 用不重复的小写英文和短横线；已使用的 id 尽量保留，避免旧锚点失效。

@@ -1,4 +1,4 @@
-# 页面固定标签。中英文共用模板，日常只需维护 home.yml、news.yml 和论文。
+# 页面固定标签。中英文共用模板；日常内容维护方式见《用法.md》。
 en:
   html_lang: "en"
   locale: "en_US"
@@ -8,6 +8,10 @@ en:
   news: "News"
   research: "Research"
   publications: "Publications"
+  projects: "Projects"
+  teaching: "Teaching"
+  grant_number: "Grant No."
+  funding: "Funding"
   talks: "Talks"
   contact: "Contact"
   email: "Email"
@@ -29,6 +33,8 @@ en:
     Paper: "Paper"
     Service: "Service"
     Award: "Award"
+    Funding: "Funding"
+    Teaching: "Teaching"
 zh:
   html_lang: "zh-CN"
   locale: "zh_CN"
@@ -38,6 +44,10 @@ zh:
   news: "最新动态"
   research: "研究方向"
   publications: "发表论文"
+  projects: "科研项目"
+  teaching: "教学工作"
+  grant_number: "批准号"
+  funding: "资助经费"
   talks: "学术报告"
   contact: "联系我"
   email: "邮件联系"
@@ -59,3 +69,5 @@ zh:
     Paper: "论文"
     Service: "学术服务"
     Award: "获奖"
+    Funding: "项目资助"
+    Teaching: "教学"

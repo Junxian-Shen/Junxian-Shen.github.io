@@ -91,7 +91,7 @@
 
 {% if page.date %}
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% unless page.date_precision == 'year' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endunless %}
 {% endif %}
 
 {% if paginator.previous_page %}
