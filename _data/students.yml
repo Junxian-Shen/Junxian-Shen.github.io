@@ -1,0 +1,6 @@
+# 在读学生，按文件顺序显示；年级需每学年手动更新。
+- name: "Yuzhuo Tan"
+  name_zh: "谭宇焯"
+  initials: "YT"
+  stage: "Year 1 Master"
+  stage_zh: "硕士一年级"

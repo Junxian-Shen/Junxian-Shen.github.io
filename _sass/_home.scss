@@ -26,6 +26,7 @@ figure, p, h1, h2, h3, h4 { margin: 0; }
 .icon-talk::before { content: "\f130"; }
 .icon-mail::before { content: "\f0e0"; }
 .icon-scholar::before { content: "\f19d"; }
+.icon-student::before { content: "\f501"; }
 .icon-pdf::before { content: "\f1c1"; }
 .icon-network::before { content: "\f6ff"; }
 .icon-shield::before { content: "\f3ed"; }
@@ -41,7 +42,7 @@ figure, p, h1, h2, h3, h4 { margin: 0; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 70px; gap: 25px; }
 .brand { font: 600 1.1rem/1.4 var(--serif); letter-spacing: -.02em; white-space: nowrap; text-decoration: none; }
 .brand-dot { color: var(--orange); }
-.site-nav { display: flex; gap: 4px; align-items: center; }
+.site-nav { display: flex; gap: 4px; align-items: center; min-width: 0; overflow-x: auto; }
 .site-nav a { padding: 6px 11px; border-radius: 6px; color: var(--muted); font-size: .875rem; text-decoration: none; transition: color .15s, background .15s; white-space: nowrap; }
 .site-nav a:hover, .site-nav a[aria-current] { color: var(--blue); background: var(--line); }
 .language-switch { display: flex; flex-shrink: 0; padding: 3px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); }
@@ -70,7 +71,7 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
 .intro-photo figcaption { display: flex; align-items: center; justify-content: center; gap: 7px; margin-top: 21px; color: var(--muted); font-size: .75rem; }
 
 /* Icons, a fine rule, and measured spacing give each section the same rhythm. */
-.about-section, .news-section, .research-section, .publications-section, .projects-section, .teaching-section, .talks-section { padding-top: 36px; }
+.about-section, .news-section, .research-section, .publications-section, .projects-section, .teaching-section, .students-section, .talks-section { padding-top: 36px; }
 .section-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-bottom: 12px; margin-bottom: 20px; border-bottom: 1px solid var(--line); }
 .section-heading > div { display: flex; align-items: center; gap: 11px; }
 .section-heading .icon { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; color: var(--blue); background: var(--line); border-radius: 8px; font-size: 1rem; }
@@ -141,6 +142,15 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
 .teaching-record a { color: var(--blue); text-decoration: none; }
 .teaching-record a:hover { text-decoration: underline; }
 .course-term { color: var(--muted); font-size: .875rem; }
+
+/* Initials-based member cards keep the student list simple to maintain. */
+.students-group-title { margin-bottom: 14px; font-size: 1rem; font-weight: 600; }
+.students-group-title span { margin-left: 4px; color: var(--muted); font-size: .8125rem; font-weight: 400; }
+.students-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 17px; }
+.student-card { min-width: 0; padding: 24px 20px; text-align: center; border: 1px solid var(--line); border-radius: 11px; background: var(--surface); box-shadow: var(--shadow); }
+.student-avatar { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; margin: 0 auto 13px; border-radius: 50%; color: var(--blue); background: var(--line); font-size: 1.0625rem; font-weight: 600; letter-spacing: .03em; }
+.student-card h4 { font-size: 1rem; line-height: 1.6; font-weight: 600; overflow-wrap: anywhere; }
+.student-stage { margin-top: 5px; color: var(--muted); font-size: .8125rem; }
 
 /* Talks use a different, compact row layout to keep the page easy to scan. */
 .talks-section { padding-bottom: 45px; }
@@ -214,7 +224,7 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
   .affiliation { font-size: .875rem; }
   .profile-links { gap: 8px; margin-top: 19px; }
   .profile-links a { padding: 6px 10px; font-size: .8125rem; gap: 6px; }
-  .about-section, .news-section, .research-section, .publications-section, .projects-section, .teaching-section, .talks-section { padding-top: 27px; }
+  .about-section, .news-section, .research-section, .publications-section, .projects-section, .teaching-section, .students-section, .talks-section { padding-top: 27px; }
   .section-heading { gap: 12px; margin-bottom: 17px; padding-bottom: 10px; }
   .section-heading h2, .lang-zh .section-heading h2 { font-size: 1.375rem; }
   .section-heading .icon { width: 29px; height: 29px; font-size: .875rem; }
@@ -250,5 +260,5 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
   .shell { width: 100%; }
   .intro { padding-block: 15px; }
   .news-timeline { max-height: none; overflow: visible; box-shadow: none; }
-  .research-area, .publication, .academic-record, .talk-card { break-inside: avoid; box-shadow: none; }
+  .research-area, .publication, .academic-record, .student-card, .talk-card { break-inside: avoid; box-shadow: none; }
 }

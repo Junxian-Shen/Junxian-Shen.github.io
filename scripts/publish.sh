@@ -41,7 +41,7 @@ fi
 
 paths=(
   _config.yml .gitignore 用法.md
-  _data/home.yml _data/home_ui.yml _data/news.yml _data/theme.yml _data/projects.yml _data/teaching.yml
+  _data/home.yml _data/home_ui.yml _data/news.yml _data/theme.yml _data/projects.yml _data/teaching.yml _data/students.yml
   _includes/home-content.html _includes/seo.html _layouts/home.html _layouts/single.html
   _pages/about.md _pages/about-zh.md _publications _talks
   _sass/_home.scss assets/css/home.scss assets/css/main.scss assets/js/home.js

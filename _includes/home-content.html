@@ -144,6 +144,24 @@
   </section>
   {% endif %}
 
+  {% if site.data.students.size > 0 %}
+  <section class="students-section shell" id="students" aria-labelledby="students-title">
+    <header class="section-heading"><div><i class="icon icon-student" aria-hidden="true"></i><h2 id="students-title">{{ ui.students }}</h2></div></header>
+    <h3 class="students-group-title">{{ ui.current_students }} <span>({{ site.data.students.size }})</span></h3>
+    <div class="students-grid">
+      {% for item in site.data.students %}
+      {% assign student_name = item.name %}{% assign student_stage = item.stage %}
+      {% if lang == 'zh' %}{% assign student_name = item.name_zh | default: item.name %}{% assign student_stage = item.stage_zh | default: item.stage %}{% endif %}
+      <article class="student-card">
+        {% if item.initials and item.initials != '' %}<div class="student-avatar" aria-hidden="true">{{ item.initials | escape }}</div>{% endif %}
+        <h4>{{ student_name | escape }}</h4>
+        {% if student_stage and student_stage != '' %}<p class="student-stage">{{ student_stage | escape }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   <section class="talks-section shell" id="talks" aria-labelledby="talks-title">
     <header class="section-heading"><div><i class="icon icon-talk" aria-hidden="true"></i><h2 id="talks-title">{{ ui.talks }}</h2></div></header>
     <div class="talk-grid">
