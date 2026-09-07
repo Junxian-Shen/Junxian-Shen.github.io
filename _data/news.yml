@@ -1,6 +1,6 @@
 # 按展示顺序维护，最新消息放最上面。
 # 日期未确认时省略 date，不推测年份；url 可省略，也可用 #teaching 等站内锚点。
-# 基金资助只放在 About 和科研项目栏目，不加入 News。
+# 基金资助只放在科研项目栏目，不加入 News 或 About。
 - date: "2026 · Fall"
   date_zh: "2026 · 秋"
   category: "Teaching"
