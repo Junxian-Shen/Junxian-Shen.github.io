@@ -1,8 +1,8 @@
-# 按展示顺序维护；批准号、经费和起止时间已按资助通知核对，类别与本人角色暂不标注。
+# 按展示顺序维护；批准号、经费和起止时间已按资助通知核对，类别由本人确认为青基 C，暂不标注本人角色。
 - title: "Study on Failure Detection Techniques for Microservice Applications Based on Zero-Intrusion End-to-End Tracing"
   title_zh: "基于零侵扰全链路追踪的微服务架构应用故障检测技术研究"
-  funder: "National Natural Science Foundation of China (NSFC)"
-  funder_zh: "国家自然科学基金"
+  funder: "NSFC Young Scientists Fund (Category C)"
+  funder_zh: "国家自然科学基金青年科学基金项目（C 类）"
   grant_number: "62602206"
   period: "Jan 2027 – Dec 2029"
   period_zh: "2027 年 1 月—2029 年 12 月"
