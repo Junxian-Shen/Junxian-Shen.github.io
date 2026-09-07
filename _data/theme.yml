@@ -1,0 +1,14 @@
+# 取自用户的「常用颜色.md」。修改这里后重新构建，两种语言同时生效。
+paper: "#F9F7F3"      # Snow
+surface: "#FFFFFF"
+mist: "#F1F2F6"       # 浅灰蓝
+ink: "#26384D"        # 为正文对比度加深的蓝灰
+muted: "#526274"
+primary: "#3D5A80"    # 深蓝 - origin
+accent: "#4A67B0"     # 中蓝 2
+line: "#DAE3E5"
+blue_light: "#A3CEF1"
+warm: "#BC6C25"
+warm_light: "#F7E1D7"
+green: "#548235"
+green_light: "#E7EEDE"

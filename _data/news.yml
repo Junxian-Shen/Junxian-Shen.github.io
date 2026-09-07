@@ -1,0 +1,33 @@
+# 按展示顺序维护，最新消息放最上面。
+# 每条只填 date、category、text；url 可省略或留空。
+- date: "2025"
+  category: "Service"
+  text: "Serving as a reviewer for IEEE Transactions on Information Forensics & Security (T-IFS)."
+  text_zh: "担任 IEEE Transactions on Information Forensics & Security（T-IFS）审稿人。"
+
+- date: "2025"
+  category: "Service"
+  text: "Serving as Publication Co-Chair for the 1st Workshop on Next-Generation Network Observability (NGNO)."
+  text_zh: "担任首届下一代网络可观测性研讨会（NGNO）的 Publication Co-Chair。"
+  url: "https://conferences.sigcomm.org/sigcomm/2025/workshop/ngno/"
+
+- date: "2023 · Sep"
+  date_zh: "2023 · 09"
+  category: "Paper"
+  text: "DeepFlow was published at ACM SIGCOMM 2023."
+  text_zh: "DeepFlow 论文发表于 ACM SIGCOMM 2023。"
+  url: "/files/DeepFlow_SIGCOMM.pdf"
+
+- date: "2023 · Mar"
+  date_zh: "2023 · 03"
+  category: "Paper"
+  text: "Serpens was published in IEEE Transactions on Parallel and Distributed Systems."
+  text_zh: "Serpens 论文发表于 IEEE Transactions on Parallel and Distributed Systems。"
+  url: "/files/Serpens_TPDS.pdf"
+
+- date: "2022 · Nov"
+  date_zh: "2022 · 11"
+  category: "Paper"
+  text: "Gringotts was published at ACM CCS 2022."
+  text_zh: "Gringotts 论文发表于 ACM CCS 2022。"
+  url: "/files/Gringotts_CCS.pdf"

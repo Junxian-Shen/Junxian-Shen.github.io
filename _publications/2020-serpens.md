@@ -6,6 +6,7 @@ permalink: /publication/2020-serpens
 excerpt: '<b><u>Junxian Shen</u></b>, Heng Yu, Zhilong Zheng, Chen Sun, Mingwei Xu, Jilong Wang'
 date: 2020-06-15
 venue: '2020 IEEE/ACM 28th International Symposium on Quality of Service (IWQoS)'
+venue_short: 'IEEE/ACM IWQoS 2020'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://junxian-shen.github.io/files/Serpens_IWQoS.pdf'
 ---

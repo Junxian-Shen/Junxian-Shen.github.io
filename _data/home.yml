@@ -1,0 +1,69 @@
+# 首页常用文案。这里只写内容，不需要修改 HTML/CSS。
+# 姓名、邮箱、机构、照片、Scholar 和 ORCID 沿用 _config.yml 的 author。
+name_zh: "沈俊贤"
+position: "Assistant Professor"
+position_zh: "助理教授"
+department: "School of Computer Science & Engineering"
+department_zh: "计算机科学与工程学院"
+employer_zh: "华南理工大学"
+location_zh: "中国 · 广州"
+cv: "/files/CV_EN.pdf"
+cv_zh: "/files/CV_ZH.pdf"
+eyebrow: "Systems & Networking"
+eyebrow_zh: "计算机系统与网络"
+
+# 用 **加粗**、*斜体*；每个 biography 条目是一段。
+headline: "Understanding the systems behind *every request.*"
+headline_zh: "理解每一次请求背后的系统"
+biography:
+  - >-
+    Junxian is currently an Assistant Professor at the School of Computer Science
+    & Engineering, South China University of Technology. He received his Ph.D.
+    at the Institute of Network Science and Cyberspace, Tsinghua University,
+    advised by Prof. Jilong Wang, Prof. Mingwei Xu, and Assoc. Prof. Han Zhang.
+    He received his B.Eng. in the Department of Computer Science and Technology
+    at Tsinghua University in July 2019, advised by the late Prof. Jun Bi.
+  - >-
+    Junxian's research focuses on **large-scale cloud and network infrastructure
+    monitoring**. Leveraging the Future Internet Technology Infrastructure (FITI),
+    a major national scientific and technological infrastructure project under
+    China's 13th Five-Year Plan, his work has led to publications at conferences
+    and journals including **ACM SIGCOMM**, **ACM CCS**, and **IEEE TPDS**.
+
+biography_zh:
+  - "沈俊贤现任华南理工大学计算机科学与工程学院助理教授。他在清华大学网络科学与网络空间研究院获得博士学位，导师为王继龙教授、徐明伟教授和张晗副教授；于 2019 年 7 月在清华大学计算机科学与技术系获得学士学位，师从已故毕军教授。"
+  - "他的研究主要聚焦于**大规模云与网络基础设施监测**。依托国家“十三五”重大科技基础设施项目——未来互联网试验设施（FITI），相关研究成果发表于 **ACM SIGCOMM**、**ACM CCS** 和 **IEEE TPDS** 等会议与期刊。"
+
+# 英文和中文并排维护；中文字段以 _zh 结尾，缺少中文时自动显示英文。
+# id 用不重复的小写英文和短横线；已使用的 id 尽量保留，避免旧锚点失效。
+research:
+  - id: cloud-observability
+    icon: network
+    title: "Cloud observability"
+    title_zh: "云与微服务可观测性"
+    description: >-
+      Non-intrusive measurement and distributed tracing for understanding
+      request behavior across applications, hosts, and networks.
+    description_zh: "通过无侵入测量与分布式追踪，理解请求在应用、主机和网络之间的执行行为。"
+    tags: ["Distributed tracing", "Microservices"]
+    tags_zh: ["分布式追踪", "微服务"]
+  - id: serverless-security
+    icon: shield
+    title: "Serverless security"
+    title_zh: "无服务器计算安全"
+    description: >-
+      Detecting resource-abuse attacks and improving the security
+      and efficiency of Function-as-a-Service workloads.
+    description_zh: "检测资源滥用攻击，提升函数即服务平台上工作负载的安全性与资源效率。"
+    tags: ["Anomaly detection", "Resource abuse"]
+    tags_zh: ["异常检测", "资源滥用"]
+  - id: network-function-systems
+    icon: server
+    title: "Network function systems"
+    title_zh: "网络功能系统"
+    description: >-
+      Efficient execution, isolation, placement, and resource management
+      for network functions and service chains.
+    description_zh: "研究网络功能与服务链的高效执行、隔离、部署和资源管理方法。"
+    tags: ["Runtime design", "Resource management"]
+    tags_zh: ["运行时设计", "资源管理"]

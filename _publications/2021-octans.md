@@ -6,6 +6,7 @@ permalink: /publication/2021-octans
 excerpt: 'Heng Yu, Zhilong Zheng, <b><u>Junxian Shen</u></b>, Congcong Miao, Chen Sun, Hongxin Hu, Jun Bi, Jianping Wu, Jilong Wang'
 date: 2021-03-03
 venue: 'IEEE Transactions on Parallel and Distributed Systems ( Volume: 32, Issue: 9, 01 September 2021)'
+venue_short: 'IEEE TPDS 2021'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://junxian-shen.github.io/files/Octans_TPDS.pdf'
 ---

@@ -6,6 +6,7 @@ permalink: /publication/2022-scorpius
 excerpt: 'Heng Yu, <b><u>Junxian Shen</u></b>, Han Zhang, Jilong Wang, Congcong Miao, Mingwei Xu'
 date: 2022-06-10
 venue: '2022 IEEE/ACM 30th International Symposium on Quality of Service (IWQoS)'
+venue_short: 'IEEE/ACM IWQoS 2022'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://junxian-shen.github.io/files/Scorpius_IWQoS.pdf'
 ---

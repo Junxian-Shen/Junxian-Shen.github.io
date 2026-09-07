@@ -6,6 +6,7 @@ permalink: /publication/2023-serpens
 excerpt: 'Heng Yu, Han Zhang, <b><u>Junxian Shen</u></b>, Yantao Geng, Jilong Wang, Congcong Miao, Mingwei Xu'
 date: 2023-03-30
 venue: 'IEEE Transactions on Parallel and Distributed Systems ( Volume: 34, Issue: 8, August 2023)'
+venue_short: 'IEEE TPDS 2023'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://junxian-shen.github.io/files/Serpens_TPDS.pdf'
 ---

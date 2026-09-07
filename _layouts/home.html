@@ -1,0 +1,56 @@
+---
+layout: compress
+---
+{% assign lang = page.lang | default: 'en' %}
+{% assign ui = site.data.home_ui[lang] %}
+{% assign home = site.data.home %}
+{% assign cv = home.cv %}
+{% assign eyebrow = home.eyebrow %}
+{% assign employer = site.author.employer %}
+{% if lang == 'zh' %}
+  {% assign cv = home.cv_zh | default: home.cv %}
+  {% assign eyebrow = home.eyebrow_zh | default: home.eyebrow %}
+  {% assign employer = home.employer_zh | default: site.author.employer %}
+{% endif %}
+<!doctype html>
+<html lang="{{ ui.html_lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <meta name="theme-color" content="{{ site.data.theme.paper }}">
+    <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ '/zh/' | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+    <link rel="preload" href="{{ '/assets/fonts/inter-regular.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="{{ '/assets/fonts/inter-semibold.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="{{ '/assets/fonts/lora-semibold.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="{{ '/assets/webfonts/fa-solid-900.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ '/assets/webfonts/fa-brands-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    <script src="{{ '/assets/js/home.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+  </head>
+  <body class="academic-home lang-{{ lang }}">
+    <a class="skip-link" href="#main">{{ ui.skip }}</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#about">{% if lang == 'zh' %}{{ home.name_zh | escape }}{% else %}{{ site.author.name | escape }}{% endif %}<span class="brand-dot">.</span></a>
+        <nav class="site-nav" aria-label="{{ ui.nav_label }}"><a href="#about" aria-current="location">{{ ui.about }}</a><a href="#news">{{ ui.news }}</a><a href="#research">{{ ui.research }}</a><a href="#publications">{{ ui.publications }}</a><a href="#talks">{{ ui.talks }}</a></nav>
+        <nav class="language-switch" aria-label="{{ ui.language_label }}"><a data-language href="{{ '/' | relative_url }}" lang="en" hreflang="en"{% if lang == 'en' %} aria-current="page"{% endif %}>EN</a><a data-language href="{{ '/zh/' | relative_url }}" lang="zh-CN" hreflang="zh-CN"{% if lang == 'zh' %} aria-current="page"{% endif %}>中文</a></nav>
+      </div>
+    </header>
+    {{ content }}
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div><a class="footer-name" href="#about">{{ site.author.name | escape }} <span lang="zh">{{ home.name_zh | escape }}</span></a><p>{{ employer | escape }} · {{ ui.location }}</p></div>
+        <div class="footer-links">
+          {% if site.author.email and site.author.email != '' %}<a href="mailto:{{ site.author.email | escape }}">{{ ui.email }} ↗</a>{% endif %}
+          {% if site.author.googlescholar and site.author.googlescholar != '' %}<a href="{{ site.author.googlescholar | escape }}" target="_blank" rel="noopener">{{ ui.scholar }} ↗</a>{% endif %}
+          {% if cv and cv != '' %}<a href="{{ cv | relative_url }}">{{ ui.cv }} ↓</a>{% endif %}
+        </div>
+        <a class="back-top" href="#about">{{ ui.back_top }} ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

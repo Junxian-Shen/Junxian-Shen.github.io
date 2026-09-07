@@ -6,6 +6,7 @@ permalink: /publication/2019-buffet
 excerpt: 'Heng Yu, <b><u>Junxian Shen</u></b>, Chen Sun, Zhilong Zheng, Jilong Wang'
 date: 2019-09-13
 venue: '2019 IEEE Global Communications Conference (GLOBECOM)'
+venue_short: 'IEEE GLOBECOM 2019'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://junxian-shen.github.io/files/Buffet_GLOBECOM.pdf'
 ---

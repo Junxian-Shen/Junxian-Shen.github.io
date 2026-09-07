@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Junxian Shen / Personal Website"
+title                    : "Junxian Shen"
 title_separator          : "-"
 name                     : &name "Junxian Shen"
-description              : &description "personal description"
+description              : &description "Assistant Professor at South China University of Technology. Research in cloud systems, networking, and infrastructure observability."
 url                      : https://junxian-shen.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # "academicpages/academicpages.github.io"
@@ -181,8 +181,10 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - scripts
   - tmp
   - vendor
+  - 用法.md
 keep_files:
   - .git
   - .svn

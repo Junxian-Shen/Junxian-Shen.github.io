@@ -6,6 +6,7 @@ permalink: /publication/2022-gringotts
 excerpt: '<b><u>Junxian Shen</u></b>, Han Zhang, Yantao Geng, Jiawei Li, Jilong Wang, Mingwei Xu'
 date: 2022-11-07
 venue: 'CCS 22: Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security'
+venue_short: 'ACM CCS 2022'
 slidesurl: 'http://junxian-shen.github.io/files/Gringotts_CCS_presentation.pdf'
 paperurl: 'https://junxian-shen.github.io/files/Gringotts_CCS.pdf'
 ---

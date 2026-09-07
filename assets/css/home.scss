@@ -1,0 +1,24 @@
+---
+---
+@font-face { font-family: "Profile Inter"; src: url("{{ '/assets/fonts/inter-regular.ttf' | relative_url }}") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Profile Inter"; src: url("{{ '/assets/fonts/inter-semibold.ttf' | relative_url }}") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: "Profile Lora"; src: url("{{ '/assets/fonts/lora-semibold.ttf' | relative_url }}") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: "Profile Icons"; src: url("{{ '/assets/webfonts/fa-solid-900.woff2' | relative_url }}") format("woff2"); font-style: normal; font-weight: 900; font-display: block; }
+@font-face { font-family: "Profile Brands"; src: url("{{ '/assets/webfonts/fa-brands-400.woff2' | relative_url }}") format("woff2"); font-style: normal; font-weight: 400; font-display: block; }
+@import "home";
+:root {
+  --ink: {{ site.data.theme.ink }};
+  --muted: {{ site.data.theme.muted }};
+  --blue: {{ site.data.theme.primary }};
+  --blue-light: {{ site.data.theme.mist }};
+  --line: {{ site.data.theme.line }};
+  --paper: {{ site.data.theme.paper }};
+  --orange: {{ site.data.theme.warm }};
+  --surface: {{ site.data.theme.surface }};
+  --mist: {{ site.data.theme.mist }};
+  --accent: {{ site.data.theme.accent }};
+  --sky: {{ site.data.theme.blue_light }};
+  --warm-light: {{ site.data.theme.warm_light }};
+  --green: {{ site.data.theme.green }};
+  --green-light: {{ site.data.theme.green_light }};
+}

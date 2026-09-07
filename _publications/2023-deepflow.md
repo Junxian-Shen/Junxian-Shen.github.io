@@ -6,6 +6,7 @@ permalink: /publication/2023-deepflow
 excerpt: '<b><u>Junxian Shen</u></b>, Han Zhang, Yang Xiang, Xingang shi, Xinrui Li, Yunxi Shen, Zijian Zhang, Yongxiang Wu, Xia Yin, Jilong Wang, Mingwei Xu, Yahui Li, Jiping Yin, Jianchang Song, Zhuofeng Li, Runjie Nie'
 date: 2023-09-01
 venue: 'ACM SIGCOMM 23: Proceedings of the ACM SIGCOMM 2023 Conference'
+venue_short: 'ACM SIGCOMM 2023'
 slidesurl: 'http://junxian-shen.github.io/files/DeepFlow_SIGCOMM_presentation.pdf'
 paperurl: 'https://junxian-shen.github.io/files/DeepFlow_SIGCOMM.pdf'
 ---
