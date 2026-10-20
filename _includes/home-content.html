@@ -47,6 +47,9 @@
   <section class="about-section shell" aria-labelledby="bio-title">
     <header class="section-heading"><div><i class="icon icon-user" aria-hidden="true"></i><h2 id="bio-title">{{ ui.about }}</h2></div></header>
     <div class="about-copy">{% for paragraph in biography %}<div class="intro-bio">{{ paragraph | markdownify }}</div>{% endfor %}</div>
+    {% assign recruitment = home.recruitment %}
+    {% if lang == 'zh' %}{% assign recruitment = home.recruitment_zh | default: home.recruitment %}{% endif %}
+    {% if recruitment and recruitment != '' %}<p class="recruitment-note">{{ recruitment | escape }} {% if site.author.email and site.author.email != '' %}<a href="mailto:{{ site.author.email | escape }}">{{ site.author.email | escape }}</a>{% if lang == 'zh' %}。{% else %}.{% endif %}{% endif %}</p>{% endif %}
   </section>
 
   <section class="news-section shell" id="news" aria-labelledby="news-title">

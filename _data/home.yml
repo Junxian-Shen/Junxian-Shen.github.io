@@ -11,6 +11,8 @@ cv: "/files/CV_EN.pdf"
 cv_zh: "/files/CV_ZH.pdf"
 eyebrow: "Systems & Networking"
 eyebrow_zh: "计算机系统与网络"
+recruitment: "I have one opening for an academic master's student each year. If you are interested in computer systems and networking research, feel free to email me at"
+recruitment_zh: "我每年有 1 个学术型硕士研究生招生名额。欢迎对计算机系统与网络研究感兴趣的同学通过邮件联系我："
 
 # 用 **加粗**、*斜体*；每个 biography 条目是一段。
 headline: "Understanding the systems behind *every request.*"

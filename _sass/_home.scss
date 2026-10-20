@@ -1,4 +1,5 @@
 /* Single-page academic profile. Fonts and icons are served locally. */
+$canvas-texture: url("../../images/ivory-oil-canvas.jpg");
 :root {
   --sans: "Profile Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   --serif: "Profile Lora", Georgia, serif;
@@ -8,7 +9,7 @@
 }
 * { box-sizing: border-box; }
 html { font-size: 16px; scroll-behavior: smooth; scroll-padding-top: 6rem; }
-body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+body { margin: 0; color: var(--ink); background: var(--paper); background-image: linear-gradient(rgba(249,247,243,.28), rgba(249,247,243,.28)), $canvas-texture; background-size: auto, 780px auto; font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-underline-offset: .2em; }
 img { display: block; max-width: 100%; height: auto; }
 figure, p, h1, h2, h3, h4 { margin: 0; }
@@ -38,7 +39,7 @@ figure, p, h1, h2, h3, h4 { margin: 0; }
 .text-link:hover { text-decoration: underline; }
 
 /* Transparent-looking navigation and a small language capsule. */
-.site-header { position: sticky; top: 0; z-index: 30; border-bottom: 1px solid var(--line); background: var(--paper); }
+.site-header { position: sticky; top: 0; z-index: 30; border-bottom: 1px solid rgba(61,90,128,.14); background: var(--paper); box-shadow: 0 3px 15px rgba(70,56,42,.035); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 70px; gap: 25px; }
 .brand { font: 600 1.1rem/1.4 var(--serif); letter-spacing: -.02em; white-space: nowrap; text-decoration: none; }
 .brand-dot { color: var(--orange); }
@@ -51,8 +52,7 @@ figure, p, h1, h2, h3, h4 { margin: 0; }
 .language-switch a:not([aria-current]):hover { color: var(--blue); background: var(--mist); }
 
 /* A light profile banner; no oversized slogan or research-overview panel. */
-.hero-band { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); background: linear-gradient(112deg, var(--paper) 20%, var(--mist) 82%, var(--line)); }
-.hero-band::before { content: ""; position: absolute; inset: 0 0 0 52%; background-image: radial-gradient(var(--blue) .65px, transparent .8px); background-size: 23px 23px; opacity: .13; pointer-events: none; -webkit-mask-image: linear-gradient(to right, transparent, #000); mask-image: linear-gradient(to right, transparent, #000); }
+.hero-band { position: relative; overflow: hidden; border-bottom: 1px solid rgba(61,90,128,.16); background-color: var(--paper); background-image: linear-gradient(112deg, rgba(251,245,234,.18) 15%, rgba(222,231,237,.26) 85%), $canvas-texture; background-size: auto, 1000px auto; background-position: center; box-shadow: inset 0 -1px rgba(255,255,255,.65); }
 .intro { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 196px; gap: 64px; align-items: center; padding-block: 44px 42px; }
 .eyebrow { color: var(--blue); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; margin-bottom: 13px; }
 h1 { font: 600 clamp(2.3rem, 4.3vw, 3rem)/1.2 var(--serif); letter-spacing: -.03em; }
@@ -79,6 +79,23 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
 .about-copy { font-size: 1rem; line-height: 1.85; }
 .intro-bio + .intro-bio { margin-top: 12px; }
 .intro-bio strong { color: var(--blue); font-weight: 600; }
+
+/* Each raised panel carries a quieter, finer layer of the same oil paint. */
+.about-copy { padding: 24px 28px; border: 1px solid rgba(255,255,255,.82); border-radius: 11px; }
+.academic-home .about-copy, .academic-home .news-timeline, .academic-home .research-area, .academic-home .academic-records, .academic-home .student-card, .academic-home .talk-grid, .academic-home .recruitment-note {
+  background-color: #fffdf9;
+  background-image: linear-gradient(125deg, rgba(255,253,247,.52), rgba(255,254,251,.76) 52%, rgba(235,241,245,.46)), $canvas-texture;
+  background-size: auto, 560px auto;
+  background-position: center, 18% 28%;
+  border-color: rgba(163,160,149,.3);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9), inset 0 -1px 0 rgba(135,126,108,.06), 0 3px 7px rgba(70,56,42,.035), 0 12px 28px rgba(70,56,42,.065);
+}
+.academic-home .news-timeline, .academic-home .student-card:nth-child(2n), .academic-home .research-area:nth-child(2n) { background-position: center, 76% 62%; }
+.academic-home .academic-records, .academic-home .talk-grid { background-position: center, 40% 85%; }
+.academic-home .recruitment-note {
+  background-image: linear-gradient(110deg, rgba(224,235,243,.55), rgba(255,253,246,.62) 70%, rgba(245,231,213,.35)), $canvas-texture;
+  background-position: center, 30% 42%;
+}
 
 /* The news panel grows gracefully: after several entries it scrolls in place. */
 .news-timeline { max-height: 24rem; overflow-y: auto; padding: 8px 22px; border: 1px solid var(--line); border-radius: 11px; background: var(--surface); box-shadow: var(--shadow); scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
@@ -144,6 +161,8 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
 .course-term { color: var(--muted); font-size: .875rem; }
 
 /* Initials-based member cards keep the student list simple to maintain. */
+.recruitment-note { margin-top: 24px; padding: 14px 18px; border-left: 3px solid var(--blue); border-radius: 0 8px 8px 0; background: var(--surface); font-size: .9375rem; line-height: 1.8; }
+.recruitment-note a { color: var(--blue); font-weight: 600; overflow-wrap: anywhere; }
 .students-group-title { margin-bottom: 14px; font-size: 1rem; font-weight: 600; }
 .students-group-title span { margin-left: 4px; color: var(--muted); font-size: .8125rem; font-weight: 400; }
 .students-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 17px; }
@@ -253,6 +272,7 @@ h1 span { display: inline-block; margin-left: 15px; font: 400 1.35rem/1.4 var(--
   .footer-links { margin: 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+@media (max-width: 600px) { .about-copy { padding: 18px; } }
 @media print {
   .site-header, .profile-links, .back-top { display: none; }
   body, .hero-band, .site-footer { background: #fff; }
